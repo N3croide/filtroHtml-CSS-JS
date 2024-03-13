@@ -1,0 +1,33 @@
+#options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5%;
+}
+#options #images{
+    width: 20%;
+    height: 50%;
+    text-align: center;
+}
+#options #images img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: translateY ease-in-out;
+    transition-duration: 0,3;
+}
+#options #images img:hover{
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-10%);
+}
+#botonFinal{
+    border-radius: 10px;
+    padding: 5%;
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#botonFinal{
+    transform: scale(1.04);
+}
