@@ -19,7 +19,7 @@ let contenido = {
 let costos =[
     [300000,380000,200000],
     [2000000,3000000,800000,3500000],
-    [500000,1000000,,800000,300000],
+    [500000,1000000,800000,300000],
     [600000,1000000,2000000,3500000],
     [2000000,1500000,0,3500000]
 ]
@@ -76,8 +76,8 @@ export class CalidadCustomHtml extends HTMLElement{
                 contador++;
                 img.addEventListener('click',
                 () => {
+                    console.log(img.getAttribute('pos'));
                     resumen += costos[this.page][parseInt(img.getAttribute('pos'))];
-
                     this.page++;
                     this.render();
             })   
