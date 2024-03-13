@@ -15,8 +15,6 @@ const post = async(data) =>{
     .catch(err  => {console.log("Error en la preticion de POST: ",err)})
 }
 
-
-
 export{
     post
 }

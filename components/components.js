@@ -35,7 +35,7 @@ export class CalidadCustomHtml extends HTMLElement{
     }
     render(){
         this.innerHTML = /* html */`
-        <h2>${contenido['titulo'][this.page]}</h2>
+        <h2 id='tituloCategoria'>${contenido['titulo'][this.page]}</h2>
         <div id="options">
         <style rel='stylesheet'>
             @import "components/components.css";

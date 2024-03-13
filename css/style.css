@@ -5,6 +5,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    color: white;
 }
 .mainContainer{
     display: flex;
@@ -14,7 +15,7 @@
     align-content: center;
     width: 100dvw;
     height: 100dvh;
-    background-color: rgba(33, 32, 32, 0.77);
+    background-color: rgba(35, 35, 35, 0.953);
     overflow: hidden;
     text-align: center;
 }
@@ -29,7 +30,9 @@
     margin: 10%;
 }
 .input input{
+    color: black;
     width: 100%;
+    border-radius: 5px;
 }
 .input.resumen{
     display: none;
@@ -50,25 +53,12 @@
 
 /* ==================================== */
 
-#options{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 5%;
+button{
+    background: rgb(58,133,180);
+    background: linear-gradient(274deg, rgba(58,133,180,1) 28%, rgba(29,205,253,1) 67%);
+    font-weight:900;
+    font-size: 100%;
 }
-#options #images{
-    width: 20%;
-    height: 50%;
-    text-align: center;
-}
-#options #images img{
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-    transition: translateeY 0.2 ease-in-out;
-}
-#options #images img:hover{
-    background-color: rgb(255, 255, 255);
-    transform: translateY(-10%);
+#tituloCategoria{
+    font-size: calc(100dvw - 95dvw);
 }
